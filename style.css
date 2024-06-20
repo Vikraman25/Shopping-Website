@@ -28,7 +28,7 @@ body{
 
 }
 .any1{
-    background-image: url(images/necklace1.jpg);
+    background-image: URL(img/necklace1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -36,7 +36,7 @@ body{
     height: 250px;
 }
 .any2{
-    background-image: url(images/earings.jpg);
+    background-image: URL(img/earings.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -44,7 +44,7 @@ body{
     height: 250px;
 }
 .any3{
-    background-image: url(images/bangle.jpg);
+    background-image: url(img/bangle.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
