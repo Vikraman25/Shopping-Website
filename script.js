@@ -22,7 +22,7 @@ function bangles(){
 
 // Sample product data
 const products = [
-    { name: 'Necklace1', price: 134, image: 'img/necklace1.jpg' },
+    { name: 'Necklace1', price: 134, image: 'necklace1.jpg' },
     // Add more products as needed
 ];
 
