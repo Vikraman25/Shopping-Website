@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='static/images') }}">
+  <link rel="stylesheet" href="{{ url_for(filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for(filename='img') }}">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -95,12 +95,12 @@
             <div>
               <label for="" class="font-sans mt-1">Payement Options:</label><br>
               <div class="flex justify-center">
-                  <img src="static/images/google-pay.png" alt="" class="w-6 h-6 "><p class="ml-2 mr-2">Gpay</p>
-                  <img src="static/images/paytm.png" alt="" class="w-7 h-7 "><p class="ml-2">Paytm</p>
-                  <img src="static/images/upi.png" alt="" class="w-8 h-8 "><p class="ml-2">Upi</p>
+                  <img src="img/google-pay.png" alt="" class="w-6 h-6 "><p class="ml-2 mr-2">Gpay</p>
+                  <img src="img/paytm.png" alt="" class="w-7 h-7 "><p class="ml-2">Paytm</p>
+                  <img src="img/upi.png" alt="" class="w-8 h-8 "><p class="ml-2">Upi</p>
               </div>
               <div class="flex justify-center">
-                 <img src="static/images/qr.jpg" alt="" class="w-40 h-40">
+                 <img src="img/qr.jpg" alt="" class="w-40 h-40">
               </div>
             </div>
          </form>
