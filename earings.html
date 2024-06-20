@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/images') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-slate-800 flex justify-between py-3 w-full">
+        <div>
+            <h1 class="text-3xl text-white pl-3 font-serif">Jewels</h1>
+        </div>
+        <div class="w-12 h-12 " id="menu">
+            <button onclick="menu()"><img src="img/menu.png" alt="" class=""></button>
+        </div>
+        <div class="flex justify-end" >
+        <nav class="flex  py-2 " >
+            <a href="login" onclick="login()"   class="font-bold font-base text-white    px-4" id="nav1">Login</a>
+            <a href="index" onclick="home()"  class="font-bold font-base text-white    px-4" id="nav1">Home</a>
+            <div class="dropdown show font-bold font-base text-white" >
+                <a class=" dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+              
+                <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                  <a onclick="necklace()" class="dropdown-item font-bold text-black hover:bg-gray-300" href="necklace">Necklace</a>
+                  <a onclick="earings()" class="dropdown-item font-bold text-black hover:bg-gray-300" href="earings">Earings</a>
+                  <a onclick="bangles()" class="dropdown-item font-bold text-black hover:bg-gray-300" href="bangles">Bangles</a>
+                </div>
+              </div>
+            <a href="cart" onclick="cart()" class="font-bold font-base text-white  px-4" id="nav1">Cart</a>
+           <!-- Example single danger button -->
+           
+        </nav>
+        </div>
+    </div>
+<div class="flex flex-wrap">
+    <div class="card w-60 m-8 ml-24 mr-10">
+        <img src="static/images/earings.jpg" alt="Earings1" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings1', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8">
+        <img src="static/images/earings.jpg" alt="Earings2" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings2', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8">
+        <img src="static/images/earings.jpg" alt="Earings3" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings3', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8">
+        <img src="static/images/earings.jpg" alt="Earings4" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings4', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8 ml-24 mr-10">
+        <img src="static/images/earings.jpg" alt="Earings5" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings5', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8">
+        <img src="static/images/earings.jpg" alt="Earings6" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings6', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8">
+        <img src="static/images/earings.jpg" alt="Earings7" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings7', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card w-60 m-8">
+        <img src="static/images/earings.jpg" alt="Earings8" >
+        <div class="card-body">
+            <div class="flex">
+            <p class="card-title pl-8 text-lg font-sans font-semibold">Earings</p>
+            <p class="card-text font-bold  pl-8">$122</p>
+            </div>
+            <div class="flex justify-center">
+                <a href="cart"><button onclick="cart(),addToCart('Earings8', 122,'earings.jpg')" type="button"
+                    class=" border-2 border-green-600 bg-green-600  rounded-md p-2 w-28 text-white font-bold ">Buy</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+  
+
+    
+
+
+
+
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
